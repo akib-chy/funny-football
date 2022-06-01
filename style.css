@@ -1,0 +1,45 @@
+.fild {
+  width: 100%;
+  height: 420px;
+  border: 2px solid black;
+}
+.bar {
+  position: fixed;
+  left: 65%;
+  transform: skewY(10deg);
+  z-index: 2;
+}
+.ball {
+  position: relative;
+  top: 35%;
+  left: 18%;
+  z-index: 1;
+  width: 5%;
+  transition: ease-in-out 0.8s 0.2s;
+}
+.fild:hover .ball {
+  transform: translate(920px, 100px);
+}
+.man {
+  position: absolute;
+  top: 15%;
+  width: 25%;
+  transition: ease-in 0.2s;
+  transform: rotate(-25deg);
+}
+.fild:hover .man {
+  transform: rotate(380deg);
+}
+h1 {
+  position: fixed;
+  left: 35%;
+  top: 6%;
+  font-size: 100px;
+  color: red;
+  text-shadow: 5px 5px 10px blue;
+  visibility: hidden;
+}
+.fild:hover h1 {
+  visibility: visible;
+  transition: ease-in-out 0.8s 1s;
+}
